@@ -73,7 +73,7 @@ export default function HeroSection() {
 
           {/* Date & Location */}
           <div className="flex flex-wrap items-center gap-6 mb-8 animate-fade-up-delay-1">
-            <div className="flex items-center gap-2 text-sm text-gray-300">
+            <div className="flex items-center gap-2 text-sm text-white">
               <svg
                 className="w-4 h-4 text-[#00e5c8]"
                 fill="none"
@@ -86,13 +86,13 @@ export default function HeroSection() {
                 <line x1="3" y1="10" x2="21" y2="10" strokeWidth="2" />
               </svg>
               <span
-                className="uppercase tracking-widest text-xs"
+                className="uppercase tracking-widest text-s"
                 style={{ fontFamily: "var(--font-orbitron)" }}
               >
                 3–4 OCTOBER 2026
               </span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-400">
+            <div className="flex items-center gap-2 text-sm text-white">
               <svg
                 className="w-4 h-4 text-[#00e5c8]"
                 fill="none"
@@ -106,7 +106,7 @@ export default function HeroSection() {
                 <circle cx="12" cy="9" r="2.5" strokeWidth="2" />
               </svg>
               <span
-                className="uppercase tracking-widest text-xs"
+                className="uppercase tracking-widest text-s"
                 style={{ fontFamily: "var(--font-orbitron)" }}
               >
                 TBD
@@ -116,7 +116,7 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mb-16 animate-fade-up-delay-2">
-            <a href="#register" className="btn-cyan">
+            <a href="register" className="btn-cyan">
               REGISTER NOW
             </a>
             <a href="#about" className="btn-outline">

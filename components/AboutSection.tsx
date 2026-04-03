@@ -7,10 +7,10 @@ export default function AboutSection() {
         style={{ background: "linear-gradient(to bottom, transparent, #00e5c8, transparent)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6 ">
         {/* Section header */}
         <div className="mb-12">
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-4 mb-3">
             <h2
               className="text-2xl md:text-3xl font-black text-white tracking-widest uppercase"
               style={{ fontFamily: "var(--font-orbitron)" }}
@@ -33,7 +33,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-20 items-start">
           {/* Left: text content */}
           <div className="space-y-5">
             {[
@@ -43,18 +43,14 @@ export default function AboutSection() {
             ].map((para, i) => (
               <p
                 key={i}
-                className="text-gray-400 text-sm leading-relaxed tracking-wide"
+                className="text-gray-400 text-lg leading-relaxed tracking-wide"
                 style={{ fontFamily: "var(--font-rajdhani)" }}
               >
                 {para}
               </p>
             ))}
 
-            <div className="pt-4">
-              <a href="#register" className="btn-cyan">
-                REGISTER NOW
-              </a>
-            </div>
+          
           </div>
 
           {/* Right: Event theme card */}
@@ -62,7 +58,7 @@ export default function AboutSection() {
             <img
               src="/event-theme.png"
               alt="Human-Robot Symbiosis Event Theme"
-              className="w-full h-auto"
+              className="w-full h-auto "
             />
           </div>
         </div>

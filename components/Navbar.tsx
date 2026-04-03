@@ -6,7 +6,7 @@ import Image from "next/image";
 const navLinks = [
   { label: "HOME", href: "#home" },
   { label: "TRSYP", href: "#about" },
-  { label: "PROGRAM", href: "#program" },
+  { label: "PROGRAM", href: "program" },
   { label: "SPONSORS", href: "#sponsors" },
   { label: "IEEE PARTNERS", href: "#partners" },
   { label: "FAQ", href: "#faq" },
@@ -16,15 +16,15 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className="absolute top-0 left-0 right-0 z-50  border-b border-white/5">
+      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="TRSYP Logo"
-            width={80}
-            height={30}
+            width={120}
+            height={45}
           />
         </a>
 
@@ -32,7 +32,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a href={link.href} className="nav-link text-[10px]">
+              <a href={link.href} className="nav-link text-sm">
                 {link.label}
               </a>
             </li>
@@ -40,7 +40,7 @@ export default function Navbar() {
         </ul>
 
         {/* CTA */}
-        <a href="#register" className="hidden md:block btn-cyan text-[10px] py-2.5">
+        <a href="register" className="hidden md:block btn-cyan text-xs py-3">
           REGISTER NOW
         </a>
 

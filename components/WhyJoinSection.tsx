@@ -1,16 +1,20 @@
+"use client";
+
+import { Star, Award, Mic } from "lucide-react";
+
 const cards = [
   {
-    icon: "⭐",
+    icon: Star,
     iconBg: "from-pink-500 to-rose-600",
     title: "NETWORK WITH 350+ ENGINEERS, STUDENTS, & YPs FROM TUNISIA",
   },
   {
-    icon: "🏅",
+    icon: Award,
     iconBg: "from-pink-400 to-fuchsia-500",
     title: "COMPETE IN REAL-WORLD ROBOTICS CHALLENGES",
   },
   {
-    icon: "🎤",
+    icon: Mic,
     iconBg: "from-pink-400 to-pink-600",
     title: "LEARN FROM 20+ INDUSTRY EXPERTS & RESEARCHERS",
   },
@@ -56,7 +60,7 @@ export default function WhyJoinSection() {
                 <div
                   className={`w-16 h-16 rounded-full bg-gradient-to-br ${card.iconBg} flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300`}
                 >
-                  {card.icon}
+                  <card.icon className="w-8 h-8 text-white" strokeWidth={1.5} />
                 </div>
               </div>
 
