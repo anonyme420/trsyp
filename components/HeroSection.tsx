@@ -30,13 +30,14 @@ export default function HeroSection() {
       </div>
 
       {/* Hero image as background overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <Image
           src="/hero.jpg"        
           alt="TRSYP robotics event"
           fill
-          className="object-cover"
+          className="object-cover w-full h-full"
           priority
+         
         />
       </div>
 

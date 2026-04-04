@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "TRSYP", href: "#about" },
@@ -13,21 +15,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo */}
         <div className="flex flex-col items-center mb-10">
-          <div className="flex items-end gap-1 mb-2">
-            <span
-              className="text-4xl font-black tracking-tight"
-              style={{ fontFamily: "var(--font-orbitron)" }}
-            >
-              <span className="text-white">TRS</span>
-              <span className="text-[#00e5c8]">Y</span>
-              <span className="text-white">P</span>
-            </span>
-            <div className="flex gap-1 mb-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00e5c8]" />
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ff2d8a]" />
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00e5c8]" />
-            </div>
-          </div>
+          <Image
+            src="/logo.png"
+            alt="TRSYP Logo"
+            width={150}
+            height={45}
+            className="mb-4"
+          />
         </div>
 
         {/* Nav links */}
