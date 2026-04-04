@@ -32,11 +32,14 @@ export default function HeroSection() {
       {/* Hero image as background overlay */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/hero.webp"        
+          src="/hero.webp"
           alt="TRSYP robotics event"
           fill
+          sizes="100vw"
           className="object-cover w-full h-full"
           priority
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAAkA4JYgCdAEO/hepgAAA/v3dT/6TnrH/V+ybJj59Hv/Zb+sT3kH+oxf/lXCvvKn/FfkX5H7wut/97gAAAA=="
         />
       </div>
 
@@ -44,13 +47,14 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
         <div className="max-w-2xl">
           {/* Logo mark */}
-          <div className="mb-6 animate-fade-up">
+          <div className="mb-6 hero-fade-in" style={{ animationDelay: "0s" }}>
             <Image
               src="/logo.png"
               alt="TRSYP Logo"
               width={400}
               height={120}
               className="mb-6"
+              priority
             />
             <p
               className="text-xs text-gray-400 tracking-widest uppercase"
@@ -67,12 +71,12 @@ export default function HeroSection() {
           </div>
 
           {/* Countdown */}
-          <div className="mb-6 animate-fade-up-delay-1">
+          <div className="mb-6 hero-fade-in" style={{ animationDelay: "0.15s" }}>
             <Countdown />
           </div>
 
           {/* Date & Location */}
-          <div className="flex flex-wrap items-center gap-6 mb-8 animate-fade-up-delay-1">
+          <div className="flex flex-wrap items-center gap-6 mb-8 hero-fade-in" style={{ animationDelay: "0.25s" }}>
             <div className="flex items-center gap-2 text-sm text-white">
               <svg
                 className="w-4 h-4 text-[#00e5c8]"
@@ -115,7 +119,7 @@ export default function HeroSection() {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mb-16 animate-fade-up-delay-2">
+          <div className="flex flex-wrap gap-4 mb-16 hero-fade-in" style={{ animationDelay: "0.35s" }}>
             <a href="register" className="btn-cyan">
               REGISTER NOW
             </a>
@@ -125,7 +129,7 @@ export default function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-8 animate-fade-up-delay-3">
+          <div className="flex flex-wrap gap-8 hero-fade-in" style={{ animationDelay: "0.45s" }}>
             {[
               { value: "2 DAYS", label: "OF INNOVATION" },
               { value: "350+", label: "PARTICIPANTS" },

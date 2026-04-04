@@ -12,7 +12,8 @@ function getCountdown() {
 }
 
 export default function Countdown() {
-  const [daysLeft, setDaysLeft] = useState<number>(() => getCountdown());
+  // Start with null to avoid hydration mismatch between server and client
+  const [daysLeft, setDaysLeft] = useState<number | null>(null);
 
   useEffect(() => {
     setDaysLeft(getCountdown());
@@ -25,9 +26,12 @@ export default function Countdown() {
         style={{
           fontFamily: "var(--font-orbitron)",
           animation: "countdownGlow 2s ease-in-out infinite",
+          // Reserve space to prevent layout shift
+          minWidth: "3ch",
+          display: "inline-block",
         }}
       >
-        {daysLeft}
+        {daysLeft !== null ? daysLeft : "\u00A0"}
       </span>
       <span
         className="text-xl md:text-2xl font-bold text-white tracking-widest"
