@@ -32,11 +32,12 @@ export default function HeroSection() {
       {/* Hero image as background overlay */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/hero.jpg"        
+          src="/hero.webp"        
           alt="TRSYP robotics event"
           fill
           className="object-cover w-full h-full"
           priority
+          loading="lazy"
          
         />
       </div>
