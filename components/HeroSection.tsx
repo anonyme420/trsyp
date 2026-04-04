@@ -37,8 +37,6 @@ export default function HeroSection() {
           fill
           className="object-cover w-full h-full"
           priority
-          loading="lazy"
-         
         />
       </div>
 
