@@ -450,7 +450,7 @@ export default function ProgramPage() {
                     <div className="mb-4 transition-transform duration-300 group-hover:scale-110 inline-block">
                       <ItemIcon
                         className="w-8 h-8"
-                        style={{ color: "#00e5c8" }}
+                        style={{ color: i % 2 === 0 ? "#00e5c8" : "#ff2d8a" }}
                         strokeWidth={1.5}
                       />
                     </div>
