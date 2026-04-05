@@ -278,11 +278,10 @@ function TimelineCard({
       />
       {/* Card */}
       <div
-        className={`relative border rounded-sm p-5 md:p-6 transition-all duration-300 hover:translate-x-1 ${
-          highlight
+        className={`relative border rounded-sm p-5 md:p-6 transition-all duration-300 hover:translate-x-1 ${highlight
             ? "border-opacity-60"
             : "border-white/10 hover:border-opacity-40"
-        }`}
+          }`}
         style={{
           background: highlight
             ? `linear-gradient(135deg, ${accentColor}08 0%, #0a0a0a 100%)`
