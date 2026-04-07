@@ -9,6 +9,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #050505;
     font-family: var(--font-rajdhani), sans-serif;
@@ -31,7 +35,7 @@
   }
 
   .nav-link {
-    @apply text-xs tracking-widest uppercase text-gray-300 hover:text-[#00e5c8] transition-colors duration-200;
+    @apply inline-block text-xs tracking-widest uppercase text-gray-300 hover:text-[#00e5c8] active:scale-95 active:text-white transition-all duration-200;
     font-family: var(--font-orbitron), monospace;
   }
 

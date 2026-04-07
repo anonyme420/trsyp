@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Countdown from "./Countdown";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -120,12 +121,12 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mb-16 hero-fade-in" style={{ animationDelay: "0.35s" }}>
-            <a href="register" className="btn-cyan">
+            <Link href="register" className="btn-cyan">
               REGISTER NOW
-            </a>
-            <a href="#about" className="btn-outline">
+            </Link>
+            <Link href="#about" className="btn-outline">
               LEARN MORE
-            </a>
+            </Link>
           </div>
 
           {/* Stats */}

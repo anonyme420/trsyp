@@ -20,18 +20,17 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    
+
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? "bg-[#050505]/90 backdrop-blur-md border-b border-[#00e5c8]/20 shadow-lg" 
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-[#050505]/90 backdrop-blur-md border-b border-[#00e5c8]/20 shadow-lg"
         : "bg-transparent border-b border-white/5"
-    }`}>
+      }`}>
       <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">

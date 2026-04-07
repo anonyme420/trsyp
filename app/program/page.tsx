@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 import Footer from "@/components/Footer";
 import {
   ClipboardList,
@@ -574,9 +575,9 @@ export default function ProgramPage() {
             >
               SECURE YOUR SPOT · LIMITED SEATS
             </p>
-            <a href="/register" className="btn-cyan text-base px-10 py-4">
+            <Link href="/register" className="btn-cyan text-base px-10 py-4">
               REGISTER NOW
-            </a>
+            </Link>
           </RevealDiv>
         </div>
       </section>
