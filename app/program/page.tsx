@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
-  Coffee,
   ClipboardList,
   Mail,
   Handshake,
@@ -30,11 +29,6 @@ const preConference = {
   title: "Conference Journey & Bibliothèque Humaine Robotique",
   subtitle: "Avant-goût — Septembre 2026",
   items: [
-    {
-      Icon: Coffee,
-      title: "Pause Café",
-      desc: "Networking over coffee — connect with fellow attendees and speakers in a relaxed setting.",
-    },
     {
       Icon: ClipboardList,
       title: "Participant Forms",
@@ -279,8 +273,8 @@ function TimelineCard({
       {/* Card */}
       <div
         className={`relative border rounded-sm p-5 md:p-6 transition-all duration-300 hover:translate-x-1 ${highlight
-            ? "border-opacity-60"
-            : "border-white/10 hover:border-opacity-40"
+          ? "border-opacity-60"
+          : "border-white/10 hover:border-opacity-40"
           }`}
         style={{
           background: highlight
@@ -440,7 +434,7 @@ export default function ProgramPage() {
             subtitle={preConference.subtitle}
           />
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {preConference.items.map((item, i) => {
               const ItemIcon = item.Icon;
               return (
@@ -502,7 +496,7 @@ export default function ProgramPage() {
                 desc={event.desc}
                 accent={event.accent}
                 Icon={event.Icon}
-                highlight={event.highlight}
+
               />
             ))}
           </div>
@@ -539,7 +533,7 @@ export default function ProgramPage() {
                 desc={event.desc}
                 accent={event.accent}
                 Icon={event.Icon}
-                highlight={event.highlight}
+
               />
             ))}
           </div>
