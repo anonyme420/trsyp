@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "HOME", href: "/" },
-  { label: "TRSYP", href: "#about" },
+  { label: "TRSYP", href: "/#about" },
   { label: "PROGRAM", href: "/program" },
-  { label: "SPONSORS", href: "#sponsors", disabled: true },
-  { label: "IEEE PARTNERS", href: "#partners", disabled: true },
-  { label: "FAQ", href: "#faq", disabled: true },
+  { label: "SPONSORS", href: "/#sponsors", disabled: true },
+  { label: "IEEE PARTNERS", href: "/#partners", disabled: true },
+  { label: "FAQ", href: "/#faq", disabled: true },
 ];
 
 export default function Navbar() {
