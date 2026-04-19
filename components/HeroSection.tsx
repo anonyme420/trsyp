@@ -94,7 +94,7 @@ export default function HeroSection() {
                 className="uppercase tracking-widest text-s"
                 style={{ fontFamily: "var(--font-orbitron)" }}
               >
-                3–4 OCTOBER 2026
+                17–18 OCTOBER 2026
               </span>
             </div>
             <div className="flex items-center gap-2 text-sm text-white">
