@@ -22,8 +22,6 @@ const shareTechMono = Share_Tech_Mono({
 
 export const metadata: Metadata = {
   title: "TRSYP 3.0 — IEEE Tunisian RAS Student & Young Professional Congress",
-  description:
-    "The Tunisian RAS Student and Young Professional Congress — 3–4 October 2026. Human-Robot Symbiosis.",
 };
 
 export default function RootLayout({
